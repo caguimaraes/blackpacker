@@ -1,10 +1,9 @@
 /* PRINCIPAIS */
 * {
     box-sizing: border-box;
-  }d
+  }
 
 body {
-    background-color: #86A873;
     margin: 0 auto;
     padding: 0;
 }
@@ -12,7 +11,7 @@ body {
 /* NAV BAR */
 
 nav {
-    background-color: black;
+    background-color: #19535F;
     min-height: 15vh;
     text-transform: uppercase;
 }
@@ -31,23 +30,6 @@ nav > div > a > img {
     
 }
 
-/* CAROUSEL */
-
-/* MISSÃO */
-
-.missao {
-    background-color: #86A873;
-    padding: 150px 0;
-}
-
-/* VALORES */
-
-.valores {
-    background-color: #F0F3F5;
-    padding: 150px 0;
-}
-
-
 /* FOOTER */
 
 footer {
@@ -55,7 +37,7 @@ footer {
     padding: 50px 0;
 }
 
-.footer-row {
+footer > .container > .row {
     align-items: center;
 }
 
@@ -87,3 +69,128 @@ ul > li > a:hover{
     width: 250px;
     align-content: center;
 }
+
+/*--------------------------------------------
+PÁGINA INDEX */
+
+/* CAROUSEL */
+
+
+
+/* MISSÃO */
+
+.missao {
+    background-color: #86A873;
+    padding: 150px 0;
+}
+
+/* VALORES */
+
+.valores {
+    background-color: #F0F3F5;
+    padding: 150px 0;
+}
+
+/* CARDS */
+
+.home-card {
+    background-color: #0b7a75;
+    padding: 80px 0 0 0;
+}
+.home-card > .container > .row {
+    padding-bottom: 80px;
+}
+
+.home-card-itens {
+    background-color: #0b7a75;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+..home-card-itens > img {
+    width: 20px;
+}
+
+.img-home {
+    width: 80px;
+    margin-left: 40%;
+}
+
+
+
+/*--------------------------------------------
+PÁGINA CONHEÇA */
+
+.historia {
+    background-color: #86A873;
+    padding: 80px 0;
+}
+
+.conheca-card {
+    background-color: #F0F3F5;
+    padding: 80px 0 0 0;
+    border-radius: 0;
+}
+.conheca-card > .container > .row {
+    padding-bottom: 80px;
+}
+
+.conheca-card-itens {
+    background-color: #d7c9aa;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    color: black;
+}
+
+/*--------------------------------------------
+PÁGINA VIAJE */
+
+.form {
+    background-image: url('../img/foto3.png');
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 80vh;
+    /* padding: 300px 0; */
+}
+
+.form > .container > .row {
+    padding-top: 100px;
+}
+
+.form > form {
+    background-color: #7b2d26;
+    padding: 20px;
+}
+.viaje-card {
+    background-color: #86A873;
+    padding: 80px 0 0 0;
+    border-radius: 0;
+}
+.viaje-card > .container > .row {
+    padding-bottom: 80px;
+}
+
+.viaje-card-itens {
+    background-color: #d7c9aa;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    color: black;
+}
+
+.viaje-card-itens >
+.card-body >
+.btn {
+    background-color: #7b2d26;
+    border-color: #7b2d26;
+    border-radius: 2.25rem;
+}
+
+
+
+/*--------------------------------------------
+PÁGINA BLOG */
+
+
+
