@@ -1,0 +1,89 @@
+/* PRINCIPAIS */
+* {
+    box-sizing: border-box;
+  }d
+
+body {
+    background-color: #86A873;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* NAV BAR */
+
+nav {
+    background-color: black;
+    min-height: 15vh;
+    text-transform: uppercase;
+}
+
+nav > div > a > img {
+    width: 350px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #BB9F06;
+    
+}
+
+/* CAROUSEL */
+
+/* MISSÃO */
+
+.missao {
+    background-color: #86A873;
+    padding: 150px 0;
+}
+
+/* VALORES */
+
+.valores {
+    background-color: #F0F3F5;
+    padding: 150px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #7b2d26;
+    padding: 50px 0;
+}
+
+.footer-row {
+    align-items: center;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+ul > li {
+    list-style: none;
+    text-transform: uppercase;    
+}
+
+ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+ul > li > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-img > img {
+    width: 45px;
+    padding-left: 10px;
+}
+
+.logo-footer> img {
+    width: 250px;
+    align-content: center;
+}
