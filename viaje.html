@@ -37,8 +37,8 @@
     <section class="viagem">
         <div class="container">
             <div class="row">
-                <div class="col-7">
-                    <p> Teste Teste Teste</p>
+                <div class="viagem-title">
+                    <p>Lugares incríveis aguardam você</p>
                 </div>
             </div>
     </section>
@@ -52,7 +52,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Visite o site</a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Visite o site</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Visite o site</a>
                         </div>
                     </div>
                 </div>
@@ -84,9 +84,22 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
-                        </div> 
+                            <a href="#" class="btn btn-primary">Visite o site</a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reserva">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <p>Reserva agora mesmo as suas próximas férias</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <a href="#" id="btn-abrir" class="btn btn-primary">Efetuar Reserva</a>
                 </div>
             </div>
         </div>
@@ -94,76 +107,76 @@
 
     <div id="modal">
         <div id="fecharModal">x</div>
-            <form>
-                <h4>Para efetuar sua reserva preencha dos campos abaixo:</h4>
-                <div class="row">
-                    <div class="col">
-                        <label for="name" placeholder="Nome" recquired>Nome</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col">
-                        <label for="name" placeholder="Sobrenome">Sobrenome</label>
-                        <input type="text" class="form-control">
-                    </div>
+        <form>
+            <h4>Para efetuar sua reserva preencha dos campos abaixo:</h4>
+            <div class="row">
+                <div class="col">
+                    <label for="name" placeholder="Nome" recquired>Nome</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" class="form-control" placeholder="você@exemplo.com.br">
+                <div class="col">
+                    <label for="name" placeholder="Sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div>
-                    <label for="address">Endereço</label>
-                    <input type="email" class="form-control">
-                </div>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" placeholder="você@exemplo.com.br">
+            </div>
+            <div>
+                <label for="address">Endereço</label>
+                <input type="email" class="form-control">
+            </div>
 
-                <div class="row">
-                    <div class="col-5">
-                        <label for="estado">Estado</label>
-                        <select name="select" class="custom-select">
-                            <option selected>Escolha..</option>
-                            <option value="1">São Paulo</option>
-                            <option value="2">Rio de Janeiro</option>
-                            <option value="3">Santa Catarina</option>
-                            <option value="4">Pará</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                        <label for="cidade">Cidade</label>
-                        <select name="select" class="custom-select">
-                            <option selected>Escolha..</option>
-                            <option value="1">São Paulo</option>
-                            <option value="2">Rio de Janeiro</option>
-                            <option value="3">Florianópolis</option>
-                            <option value="4">Belém do Pará</option>
-                        </select>
-                    </div>
-                    <div class="col-3">
-                        <label for="cep">Cep</label>
-                        <input type="text" class="form-control">
-                    </div>
+            <div class="row">
+                <div class="col-5">
+                    <label for="estado">Estado</label>
+                    <select name="select" class="custom-select">
+                        <option selected>Escolha..</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Rio de Janeiro</option>
+                        <option value="3">Santa Catarina</option>
+                        <option value="4">Pará</option>
+                    </select>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="destino">Escolha seu destino</label>
-                        <select name="select" class="custom-select">
-                            <option selected>Escolha..</option>
-                            <option value="1">Hostel </option>
-                            <option value="2">Rio de Janeiro</option>
-                            <option value="3">Florianópolis</option>
-                            <option value="4">Belém do Pará</option>
-                        </select>
-                    </div>
+                <div class="col-4">
+                    <label for="cidade">Cidade</label>
+                    <select name="select" class="custom-select">
+                        <option selected>Escolha..</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Rio de Janeiro</option>
+                        <option value="3">Florianópolis</option>
+                        <option value="4">Belém do Pará</option>
+                    </select>
                 </div>
-                <div>
-                  <div class="btn btn-primary btn-lg btn-block btn-reservar">Reservar</div>
+                <div class="col-3">
+                    <label for="cep">Cep</label>
+                    <input type="text" class="form-control">
                 </div>
-            </form>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="destino">Escolha seu destino</label>
+                    <select name="select" class="custom-select">
+                        <option selected>Escolha..</option>
+                        <option value="1">Hostel </option>
+                        <option value="2">Rio de Janeiro</option>
+                        <option value="3">Florianópolis</option>
+                        <option value="4">Belém do Pará</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="btn btn-primary btn-lg btn-block btn-reservar">Reservar</div>
+            </div>
+        </form>
     </div>
-    
+
 
     <footer>
         <div class="container">
-            <div class="row footer-row">
-                <div class="col-4">
+            <div class="row">
+                <div class="footer-1 col-md-4 col-sm-12">
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
@@ -179,7 +192,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-img col-4">
+                <div class="footer-img col-md-4 col-sm-12">
                     <img src="./assets/img/fbutton.png" alt="Botão Facebook">
                     <img src="./assets/img/instabutton.png" alt="Botão Instagram">
                     <img src="./assets/img/inbutton.png" alt="Botão Linkedin">
@@ -187,13 +200,19 @@
                     <p>Newsletter:</p>
                     <input type="text">
                 </div>
-                <div class="logo-footer col-4">
+                <div class="logo-footer col-md-4 col-sm-12">
                     <img src="assets/img/logo_blackpackers_branco.png" alt="">
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-2 col-md-12 col-sm-12">
+                    <p>2018 - BLACKPACKER | Desenvolvido por Reprograma</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
