@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blackpacker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -33,30 +34,13 @@
         </nav>
     </header>
 
-    <section class="form">
-      <div class="container">
-        <div class="row">
-          <div class="col-7">
-            <p> Teste Teste Teste</p>
-          </div>
-          <div class="col-5">
-              <form>
-                  <div class="form-group">
-                      <label for="exampleInputEmail">E-mail adress</label>
-                      <input type="email" class="form-control" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else</small>
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleInputPassword">Password</label>
-                      <input type="password" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input">
-                      
-                  </div>
-              </form>
-        </div>
-      </div>
+    <section class="viagem">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <p> Teste Teste Teste</p>
+                </div>
+            </div>
     </section>
 
     <section class="viaje-card">
@@ -64,11 +48,11 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="card viaje-card-itens">
-                        <img class="card-img-top" src="assets/img/hostel2.jpeg" alt="Ícone">
+                        <img class="card-img-top" src="assets/img/tolu-bamwo-nappy-5050.jpeg" alt="Ícone">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>                 
+                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +62,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>                    
+                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +74,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>                 
+                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -100,13 +84,81 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>                    
-                        </div>
+                            <a href="#" id="btn-abrir" class="btn btn-primary btn-abrir">Go somewhere</a>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div id="modal">
+        <div id="fecharModal">x</div>
+            <form>
+                <h4>Para efetuar sua reserva preencha dos campos abaixo:</h4>
+                <div class="row">
+                    <div class="col">
+                        <label for="name" placeholder="Nome" recquired>Nome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="name" placeholder="Sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" placeholder="você@exemplo.com.br">
+                </div>
+                <div>
+                    <label for="address">Endereço</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="row">
+                    <div class="col-5">
+                        <label for="estado">Estado</label>
+                        <select name="select" class="custom-select">
+                            <option selected>Escolha..</option>
+                            <option value="1">São Paulo</option>
+                            <option value="2">Rio de Janeiro</option>
+                            <option value="3">Santa Catarina</option>
+                            <option value="4">Pará</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="cidade">Cidade</label>
+                        <select name="select" class="custom-select">
+                            <option selected>Escolha..</option>
+                            <option value="1">São Paulo</option>
+                            <option value="2">Rio de Janeiro</option>
+                            <option value="3">Florianópolis</option>
+                            <option value="4">Belém do Pará</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="cep">Cep</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="destino">Escolha seu destino</label>
+                        <select name="select" class="custom-select">
+                            <option selected>Escolha..</option>
+                            <option value="1">Hostel </option>
+                            <option value="2">Rio de Janeiro</option>
+                            <option value="3">Florianópolis</option>
+                            <option value="4">Belém do Pará</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                  <div class="btn btn-primary btn-lg btn-block btn-reservar">Reservar</div>
+                </div>
+            </form>
+    </div>
+    
 
     <footer>
         <div class="container">

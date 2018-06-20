@@ -6,6 +6,7 @@
 body {
     margin: 0 auto;
     padding: 0;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* NAV BAR */
@@ -26,7 +27,7 @@ nav > div > a > img {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    background-color: #BB9F06;
+    background-color: #7b2d26;
     
 }
 
@@ -34,7 +35,6 @@ nav > div > a > img {
 
 footer {
     background-color: #7b2d26;
-    padding: 50px 0;
 }
 
 footer > .container > .row {
@@ -70,12 +70,49 @@ ul > li > a:hover{
     align-content: center;
 }
 
+.footer-1 {
+    padding: 60px 0;
+}
+
+.footer-2 {
+    padding: 15px 0;
+    background-color: black;
+}
+
+.footer-2 > p {
+    text-align: center;
+    font-size: 0.9rem;
+}
 /*--------------------------------------------
 PÁGINA INDEX */
 
 /* CAROUSEL */
 
+.carousel-caption {
+    text-align: left;
+    padding-bottom: 70px;
+}
 
+.carousel-caption > p {
+    font-family: 'Bree Serif', serif;
+    font-size: 5em;
+    max-width: 70%;
+    line-height: 120%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption > a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800; 
+}
+
+.carousel-caption > .btn {
+    background-color: #7b2d26;
+    border-color: #7b2d26;
+    border-radius: 2.25rem;
+    padding: 0.9rem 4rem;
+}
 
 /* MISSÃO */
 
@@ -109,27 +146,22 @@ PÁGINA INDEX */
     padding: 50px 0;
 }
 
-..home-card-itens > img {
-    width: 20px;
-}
-
-.img-home {
+.home-card-itens > img {
     width: 80px;
     margin-left: 40%;
 }
-
-
 
 /*--------------------------------------------
 PÁGINA CONHEÇA */
 
 .historia {
-    background-color: #86A873;
+    background-color: #86A873;   
     padding: 80px 0;
 }
 
 .conheca-card {
-    background-color: #F0F3F5;
+    background-image: url('../img/arms-beach-blur-428325.jpg');
+    background-size: cover;
     padding: 80px 0 0 0;
     border-radius: 0;
 }
@@ -139,7 +171,6 @@ PÁGINA CONHEÇA */
 
 .conheca-card-itens {
     background-color: #d7c9aa;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     text-align: center;
     color: black;
 }
@@ -147,26 +178,18 @@ PÁGINA CONHEÇA */
 /*--------------------------------------------
 PÁGINA VIAJE */
 
-.form {
+.viagem {
     background-image: url('../img/foto3.png');
-    background-attachment: fixed;
     background-size: cover;
-    min-height: 80vh;
-    /* padding: 300px 0; */
+    background-attachment: fixed;
+    min-height: 500px;
 }
 
-.form > .container > .row {
-    padding-top: 100px;
-}
-
-.form > form {
-    background-color: #7b2d26;
-    padding: 20px;
-}
 .viaje-card {
-    background-color: #86A873;
+    background-color: #0b7a75;
     padding: 80px 0 0 0;
     border-radius: 0;
+    position: relative;
 }
 .viaje-card > .container > .row {
     padding-bottom: 80px;
@@ -187,6 +210,61 @@ PÁGINA VIAJE */
     border-radius: 2.25rem;
 }
 
+#modal {
+    background-color: rgba(121,48,39,0.9);
+    padding: 0px 35px 0px 25px;
+    display: none; 
+    position: absolute;
+    margin: auto;
+    height: 35em;;
+    width: 50em;;
+    align-content: space-around;
+    border-radius: 20px;
+    text-align: left;
+    left: 25%;
+    top: 130%;
+    /* transform: translate3d(-50%, -50%, 0); */
+}
+
+#modal > form {
+    color: white;
+    padding-top: 10px;
+}
+
+#modal > form > h4 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.btn-reservar {
+    margin-top: 1em;
+    background-color: #0b7a75;
+    border: none;
+}
+
+.btn-reservar:hover {
+    background-color: #0b7a75;
+    border: none;
+}
+
+
+
+#fecharModal {
+    text-align: right;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+#modal.visivel {
+    display: block;
+}
+
+#fecharModal {
+    cursor: pointer;
+}
 
 
 /*--------------------------------------------
