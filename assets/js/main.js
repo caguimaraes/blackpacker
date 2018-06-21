@@ -11,8 +11,7 @@ abrirModal.onclick = function(event) {
     modal.classList.add('visivel')
 }
 
-// for (abrirModal of )
-
 fecharModal.onclick = function(){
     modal.classList.remove('visivel')
 }
+

@@ -288,9 +288,26 @@ a {
     cursor: pointer;
 }
 
-
 /*--------------------------------------------
 PÁGINA BLOG */
 
+.blog {
+    background-color: #d7c9aa;
+}
 
+.conteudo {
+    background-color: blue;
+}
+
+.data {
+    background-color: red;
+}
+
+.textoDiv {
+    font-size: 12px;
+}
+
+.h2 {
+    font-size: 12px;
+}
 
