@@ -1,7 +1,7 @@
 // JSON BLOG
 var conteudo = {
     "20/06/2018": {
-      "title": "Teste",
+      "title": "Viajar também é para pessoas negras",
       "content": "lorem lorem"
     },
     "18/06/2018": {
