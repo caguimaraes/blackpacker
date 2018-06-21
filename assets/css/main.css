@@ -114,6 +114,14 @@ PÁGINA INDEX */
     padding: 0.9rem 4rem;
 }
 
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+
 /* MISSÃO */
 
 .missao {
@@ -129,10 +137,14 @@ PÁGINA INDEX */
 }
 
 /* CARDS */
+ .home-card > p {
+     text-align: center;
+ }
+
 
 .home-card {
     background-color: #0b7a75;
-    padding: 80px 0 0 0;
+    padding: 50px 0 0 0;
 }
 .home-card > .container > .row {
     padding-bottom: 80px;
@@ -190,7 +202,8 @@ PÁGINA VIAJE */
     min-height: 500px;
 }
 
-.viagem-title {
+.viagem-title,
+.capa-title {
     font-family: 'Bree Serif', serif;
     font-size: 5em;
     max-width: 70%;
@@ -276,8 +289,6 @@ a {
     border: none;
 }
 
-
-
 #fecharModal {
     text-align: right;
     color: white;
@@ -297,16 +308,24 @@ a {
 /*--------------------------------------------
 PÁGINA BLOG */
 
-.blog {
-    background-color: #d7c9aa;
+.blogCapa {
+    background-image: url('../img/capa_blog.jpeg');
+    background-size: contain;
+    /* background-attachment: fixed; */
+    min-height: 500px;
 }
 
-.conteudo {
-    background-color: #d7c9aa
+#blog {
+    background-color: #F0F3F5;
 }
 
-.data {
-    background-color: red;
+#blog >.container {
+    padding-top: 1rem;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 8em 0;
 }
 
 .textoDiv {
@@ -316,4 +335,6 @@ PÁGINA BLOG */
 .h2 {
     font-size: 12px;
 }
+
+
 
