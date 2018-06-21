@@ -35,19 +35,61 @@ nav > div > a > img {
 
 footer {
     background-color: #7b2d26;
+    text-align: center;
 }
 
-footer > .container > .row {
-    align-items: center;
+footer .paragrafo{
+    background-color: black;
+    padding: 20px 0;
 }
 
-ul {
-    margin-bottom: 0;
+footer .paragrafo > p{
+    color: darkslategray;
+    font-size: 0.9rem;
+}
+footer .icones {
+    padding: 30px;
+
+}
+footer .icones img{
+    width: 35px;
+    margin: 15px;
 }
 
-ul > li {
+footer .links{
+    padding: 30px;
+}
+
+footer .links ul  li {
     list-style: none;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    display: inline; 
+    font-weight: bold;
+    margin: 15px;
+    padding-right: 30px;
+    color: white;
+    letter-spacing: 0.2em;
+}
+
+footer .contato {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin: 15px;
+}
+
+footer .contato p{
+    color: white;
+    text-decoration: none;
+}
+
+footer .contato p a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .contato p a:hover{
+    color: #7b2d26;
 }
 
 ul > li > a{
@@ -60,29 +102,6 @@ ul > li > a:hover{
     text-decoration: none;
 }
 
-.footer-img > img {
-    width: 45px;
-    padding-left: 10px;
-}
-
-.logo-footer> img {
-    width: 250px;
-    align-content: center;
-}
-
-.footer-1 {
-    padding: 60px 0;
-}
-
-.footer-2 {
-    padding: 15px 0;
-    background-color: black;
-}
-
-.footer-2 > p {
-    text-align: center;
-    font-size: 0.9rem;
-}
 /*--------------------------------------------
 PÁGINA INDEX */
 
@@ -161,6 +180,42 @@ PÁGINA INDEX */
 .home-card-itens > img {
     width: 80px;
     margin-left: 40%;
+}
+
+/* BOTÃO SUBIR */
+
+.arrow-up {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.arrow-up img {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 15px;
+    top: 12px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    width: 20px; 
+}
+
+.arrow-up:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.arrow-up:hover img {
+    color: #fff;
+    top: 5px;
 }
 
 /*--------------------------------------------
