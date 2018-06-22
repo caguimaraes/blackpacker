@@ -141,6 +141,11 @@ PÁGINA INDEX */
     font-family: 'Bree Serif', serif;
 }
 
+.main-paragrafo {
+   font-size: 1.2em;
+   text-align: justify;
+}
+
 /* MISSÃO */
 
 .missao {
@@ -186,7 +191,7 @@ PÁGINA INDEX */
 
 .arrow-up {
     position: fixed;
-    bottom: 80px;
+    bottom: 15px;
     right: 20px;
     background: rgba(255, 255, 255, 0.5);
     width: 50px;
@@ -381,7 +386,7 @@ PÁGINA BLOG */
 
 .blogCapa {
     background-image: url('../img/capa_blog.jpeg');
-    background-size: contain;
+    background-size: cover;
     /* background-attachment: fixed; */
     min-height: 500px;
 }
